@@ -1,0 +1,111 @@
+#menuDiv {
+	background-color : red;
+	height: 65px;
+	position: absolute;
+}
+
+#divLR{
+	display: flex;
+}
+#divRight{
+	height: 250px;
+	width: 50%;
+
+	}
+#divLeft{
+	width: 50%;
+	}
+
+#divCenter{
+	height: 28em;
+}
+#img {
+	width: 79em;
+    height: 28em;
+}
+
+/*@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}*/
+
+
+.container {
+  position: relative;
+
+
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height:22em;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+.container:hover .image {
+  opacity: 0.65;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.button{
+
+}
+
+body {
+	margin: 0px;
+}
+
+/*THE NAV BAR CSS*/ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3B4F3A;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  opacity:0.85
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #8E643E;
+}
