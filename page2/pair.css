@@ -2,13 +2,40 @@ body{
     background-image: url("pr/pla.jpg");
     background-size: cover;
     background-repeat: repeat-x;
+    margin: 0px;
 }
-#Home{
-	background-color: gray;
-	 font-size: 35px;
-	  opacity: 0.5;
-	  float: right;
+/*NAV BAR*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3B4F3A;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  opacity:0.85
 }
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #8E643E;
+}
+/*NAV BAR*/
 .continen{
 		text-align: center;
 }
@@ -21,6 +48,8 @@ background-color: gray;
   margin: 4px 2px;
   cursor: pointer;
  	float: center;
+  opacity: 0.5;
+  border-radius: 32px
     
 }
 #q1 {
