@@ -20,7 +20,7 @@
 	height: 28em;
 }
 #img {
-	width: auto;
+	width: 79em;
     height: 28em;
 }
 
@@ -77,6 +77,7 @@ body {
 	margin: 0px;
 }
 
+/*THE NAV BAR CSS*/ 
 ul {
   list-style-type: none;
   margin: 0;
