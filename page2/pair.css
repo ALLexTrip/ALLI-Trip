@@ -37,8 +37,14 @@ li a:hover {
 }
 /*NAV BAR*/
 .continen{
-		text-align: center;
-    ma
+		width: 200%;
+    text-align: center;
+    top: -210%;
+    position: fixed;
+    font-size: 33px;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #big{
   margin-top: 200px;
@@ -68,12 +74,14 @@ background-color: gray;
 }
 #q2{
 
-	  margin: 0;
-    position: absolute;
+	    width: 200%;
+    text-align: center;
+    top: -151%;
+    position: fixed;
+    font-size: 33px;
+    font-weight: bold;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    opacity: 0.7;
 }
 
 .bb{
@@ -167,7 +175,12 @@ margin: 0;
   font-size: 25px;
 }
 #q3{
-  text-align: -webkit-center;
+  position: fixed;
+    font-size: 27px;
+    top: -12%;
+    z-index: 999999;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #q3a{
   text-align: -webkit-center;
@@ -180,4 +193,51 @@ margin: 0;
 }
 #q3e{
   text-align: -webkit-center;
+}
+
+
+
+
+
+.divLR{
+	display: flex;
+	width: 1000px;
+}
+.divRight{
+	height: 250px;position: relative;
+	width: 100%;
+
+	}
+.divLeft{
+	width: 100%;position: relative;margin-right: 15px;
+	}
+
+.divCenter{
+	height: 28em;
+}
+.img {
+	width: 79em;
+    height: 28em;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+.container:hover .image {
+  opacity: 0.65;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height:20em;
 }
