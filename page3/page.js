@@ -84,6 +84,12 @@ $("#calculate").click(function(){
 	var accomodation = $("#accomodation").val()
 	var result = arrayOfHotel[0].calculate(number,days,roomType,accomodation)
 	$("#result").html(result);
+	$("#result").append("<button id = 'currency'> Currency </button>")
+	$("#currency").click(function(){
+		var currencyCalc = 3 * result + '$'
+		$("#result").append(`<div>`+currencyCalc+`</div>`)
+
+	})
 })
 
 
