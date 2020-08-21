@@ -38,6 +38,10 @@ li a:hover {
 /*NAV BAR*/
 .continen{
 		text-align: center;
+    ma
+}
+#big{
+  margin-top: 200px;
 }
 .continent{
 background-color: gray;
@@ -49,7 +53,7 @@ background-color: gray;
   cursor: pointer;
  	float: center;
   opacity: 0.5;
-  border-radius: 32px
+  
     
 }
 #q1 {
@@ -59,6 +63,8 @@ background-color: gray;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0.7;
+    
+
 }
 #q2{
 
@@ -70,3 +76,108 @@ background-color: gray;
     opacity: 0.7;
 }
 
+.bb{
+  background-color: gray;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: center;
+  opacity: 0.5;
+  width: 200px;
+  
+}
+#step2{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    
+      grid-gap: 20px;
+}
+#destination1 {
+margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    
+      grid-gap: 20px;
+}
+
+#destination2 {
+ margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.8; 
+    
+      grid-gap: 20px;
+}
+
+#destination3 {
+  margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+   
+      grid-gap: 20px;
+}
+#destination4 {
+  margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+ 
+      grid-gap: 20px;
+}
+#destination5 {
+  margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+        grid-gap: 20px;
+}
+#destination6 {
+  margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    
+      grid-gap: 20px;
+}
+
+}
+#q2{
+  text-align: -webkit-center;
+  font-size: 25px;
+}
+#q3{
+  text-align: -webkit-center;
+}
+#q3a{
+  text-align: -webkit-center;
+}
+#q3b{
+  text-align: -webkit-center;
+}
+#q3c{
+  text-align: -webkit-center;
+}
+#q3e{
+  text-align: -webkit-center;
+}
