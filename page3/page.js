@@ -1,48 +1,58 @@
+$("#Home").click(function(){
+	location.replace("../page1/index.html")
+})
+
+var hotel =  localStorage.getItem("hotel");
+if(hotel === null) location.replace("../page1/index.html")
 var makeHotel = function(name,roomPrice){
+
 	return {
+		name:name,
 		roomPrice:roomPrice,
 		calculate:function(nbr,days,roomType,accomodation){
+			
 			var total = 0;
 			if(roomType==='Simple'){
 				if(accomodation==='Bed&Breakfast'){
 					total=this.roomPrice*nbr*days;
 				}
 				else if(accomodation==='HalfBoard'){
-					total=this.roomPrice*nbr*days+60;
+					total=this.roomPrice*parseInt(nbr)*parseInt(days)+60;
 				}
 				else if(accomodation==='FullBoard'){
 					total=this.roomPrice*nbr*days+100;
 			}
 
-		}
-		else if(roomtype==='Superior'){
-			var price = this.roomPrice+this.roomPrice * 30 / 100;
-			if(accomodation==='Bed&Breakfast'){
-					total=price*nbr*days;
-				}
-				else if(accomodation==='HalfBoard'){
-					total=price*nbr*days+60;
-				}
-				else if(accomodation==='FullBoard'){
-					total=price*nbr*days+100;
-			}	
-		}
-	 	else if(roomType==='suit'){
-	 		var price = this.roomPrice+this.roomPrice * 60 / 100;
-	 		if(accomodation==='Bed&Breakfast'){
-					total=price*nbr*days;
-				}
-				else if(accomodation==='HalfBoard'){
-					total=price*nbr*days+60;
-				}
-				else if(accomodation==='FullBoard'){
-					total=price*nbr*days+100;
 			}
-	 	}
+			else if(roomType==='Superior'){
+				var price = this.roomPrice+this.roomPrice * 30 / 100;
+				if(accomodation==='Bed&Breakfast'){
+						total=price*nbr*days;
+					}
+					else if(accomodation==='HalfBoard'){
+						total=price*nbr*days+60;
+					}
+					else if(accomodation==='FullBoard'){
+						total=price*nbr*days+100;
+				}	
+			}
+		 	else if(roomType==='Suit'){
+		 		var price = this.roomPrice+this.roomPrice * 60 / 100;
+		 		if(accomodation==='Bed&Breakfast'){
+						total=price*nbr*days;
+					}
+					else if(accomodation==='HalfBoard'){
+						total=price*nbr*days+60;
+					}
+					else if(accomodation==='FullBoard'){
+						total=price*nbr*days+100;
+				}
+	 		}
+	 		return total
 
 
 	}
-}
+}}
 //asia sea //  
 var vietnam = makeHotel("Phong Nha Farmastay",131)
 var malaysia = makeHotel("Legoland Malysia Resort",294)
@@ -70,12 +80,19 @@ var arrayOfHotel = array.filter(function(element){
 
 $(document).ready(function() {
 $("#calculate").click(function(){
+
 	var number = $("#nbp").val()
 	var roomType = $("#type-room").val()
 	var days = $("#days").val()
 	var accomodation = $("#accomodation").val()
 	var result = arrayOfHotel[0].calculate(number,days,roomType,accomodation)
-	$("#result").text(result);
+	$("#result").html(result);
+	$("#result").append("<button id = 'currency'> Currency </button>")
+	$("#currency").click(function(){
+		var currencyCalc = 3 * result + '$'
+		$("#result").append(`<div>`+currencyCalc+`</div>`)
+
+	})
 })
 
 
