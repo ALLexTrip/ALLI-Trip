@@ -7,10 +7,12 @@ $("#Asia").click(function(){
     $("#step2").show();
     $("#sea").click(function(){
     	$("#step2").hide("slow") && $("#sea").css("background-color", "green");
+
     	$("#destination2").show("slow");
         console.log('123')
         $("#asiaSea1").click(function(){
             console.log('456')
+
             location.replace("../page3/page.html")
             hotel = "Phong Nha Farmastay"
         })
