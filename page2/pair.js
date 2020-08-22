@@ -7,8 +7,12 @@ $("#Asia").click(function(){
     $("#step2").show();
     $("#sea").click(function(){
     	$("#step2").hide("slow") && $("#sea").css("background-color", "green");
-    	$("#destination1").show("slow");
-        $("asiaCity1").click(function(){
+
+    	$("#destination2").show("slow");
+        console.log('123')
+        $("#asiaSea1").click(function(){
+            console.log('456')
+
             location.replace("../page3/page.html")
             hotel = "Phong Nha Farmastay"
         })
@@ -25,7 +29,7 @@ $("#Asia").click(function(){
 	$("#step2").show("slow");
 	$("#city").click(function(){
 		$("#step2").hide("slow") && $("#city").css("background-color", "green");
-		$("#destination2").show("slow")
+		$("#destination1").show("slow")
         $("#asiaCity1").click(function(){
             localStorage.setItem("hotel", "Suncourt Hotel Yatri");
             location.replace("../page3/page.html")
@@ -67,10 +71,12 @@ $("#Europe").click(function(){
     	$("#step2").hide("slow") && $("#sea").css("background-color", "green");
     	$("#destination4").show("slow")
         $("#europeSea1").click(function(){
+            localStorage.setItem("hotel", "ibiza Rocks hotel")
             location.replace("../page3/page.html")
             hotel = "ibiza Rocks hotel"
         })
         $("#europeSea2").click(function(){
+            localStorage.setItem("hotel", "tahiti villag")
             location.replace("../page3/page.html")
             hotel = "tahiti village"
         })
@@ -84,10 +90,12 @@ $("#Europe").click(function(){
     	$("#step2").hide("slow") && $("#sea").css("background-color", "green");
     	$("#destination5").show("slow")
         $("#americaSea1").click(function(){
+            localStorage.setItem("hotel", "the florida hotel")
             location.replace("../page3/page.html")
             hotel = "the florida hotel"
         })
         $("#americaSea2").click(function(){
+            localStorage.setItem("hotel", "Portobay")
             location.replace("../page3/page.html")
             hotel = "Portobay"
         })
@@ -101,10 +109,12 @@ $("#Europe").click(function(){
     	$("#step2").hide("slow") && $("#city").css("background-color", "green");
     	$("#destination6").show("slow")
          $("#americaCity1").click(function(){
+            localStorage.setItem("hotel", "bellagio")
             location.replace("../page3/page.html")
             hotel = "bellagio"
         })
           $("#americaCity2").click(function(){
+            localStorage.setItem("hotel", "omni dallas")
             location.replace("../page3/page.html")
             hotel = "omni dallas"
         })
