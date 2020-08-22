@@ -1,3 +1,6 @@
+$("#Home").click(function(){
+	location.replace("../page1/index.html")
+})
 
 var hotel =  localStorage.getItem("hotel");
 if(hotel === null) location.replace("../page1/index.html")
@@ -83,11 +86,11 @@ $("#calculate").click(function(){
 	var days = $("#days").val()
 	var accomodation = $("#accomodation").val()
 	var result = arrayOfHotel[0].calculate(number,days,roomType,accomodation)
-	$("#result").html(result);
-	$("#result").append("<button id = 'currency'> Currency </button>")
+	$("#result").html(`<span id="cu">${result}  DT  </span>`);
+	$("#result").append("<button id = 'currency' class='button'> Currency </button>")
 	$("#currency").click(function(){
 		var currencyCalc = Math.round(3 * result) + ' $'
-		$("#result").append(`<div>`+currencyCalc+`</div>`)
+		$("#result").append(` <span id="cuu">   `+currencyCalc+`</span>`)
 
 	})
 })
