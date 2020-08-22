@@ -1,3 +1,6 @@
+$("#Home").click(function(){
+	location.replace("../page1/index.html")
+})
 
 var hotel =  localStorage.getItem("hotel");
 if(hotel === null) location.replace("../page1/index.html")
