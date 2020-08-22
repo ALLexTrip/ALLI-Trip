@@ -89,7 +89,7 @@ $("#calculate").click(function(){
 	$("#result").html(`<span id="cu">${result}  DT  </span>`);
 	$("#result").append("<button id = 'currency' class='button'> Currency </button>")
 	$("#currency").click(function(){
-		var currencyCalc = Math.round(3 * result) + ' $'
+		var currencyCalc = Math.round(result / 2.73) + ' $'
 		$("#result").append(` <span id="cuu">   `+currencyCalc+`</span>`)
 
 	})
