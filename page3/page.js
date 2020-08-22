@@ -86,7 +86,7 @@ $("#calculate").click(function(){
 	$("#result").html(result);
 	$("#result").append("<button id = 'currency'> Currency </button>")
 	$("#currency").click(function(){
-		var currencyCalc = 3 * result + '$'
+		var currencyCalc = Math.round(3 * result) + ' $'
 		$("#result").append(`<div>`+currencyCalc+`</div>`)
 
 	})
