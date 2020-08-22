@@ -8,7 +8,7 @@ $("#Asia").click(function(){
     $("#sea").click(function(){
     	$("#step2").hide("slow") && $("#sea").css("background-color", "green");
 
-    	$("#destination2").show("slow");
+    	$("#destination1").show("slow");
         console.log('123')
         $("#asiaSea1").click(function(){
             console.log('456')
@@ -29,7 +29,7 @@ $("#Asia").click(function(){
 	$("#step2").show("slow");
 	$("#city").click(function(){
 		$("#step2").hide("slow") && $("#city").css("background-color", "green");
-		$("#destination1").show("slow")
+		$("#destination2").show("slow")
         $("#asiaCity1").click(function(){
             localStorage.setItem("hotel", "Suncourt Hotel Yatri");
             location.replace("../page3/page.html")
